@@ -17,9 +17,9 @@ int main(void)
         {
                 for (s = 0; s < 10; s++)
                 {
-                 	for (t = 0; t < 10; t++)
+                 	for (t = f; t < 10; t++)
                 	{
-                        	for (fo = 1; fo < 10; fo++)
+                        	for (fo = s + 1; fo < 10; fo++)
                         	{
                                 	putchar(48 + f);
 					putchar(48 + s);
