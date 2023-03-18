@@ -10,7 +10,7 @@ int main(void)
 {
 	int numHex;
 	char alHex;
-	
+
 	for (numHex = 0; numHex < 10; numHex++)
 	{
 		putchar(48 + numHex);
@@ -20,6 +20,6 @@ int main(void)
 		putchar(alHex);
 	}
 	putchar('\n');
-	
+
 	return (0);
 }
