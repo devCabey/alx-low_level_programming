@@ -15,9 +15,10 @@ int main(void)
 		putchar(alph);
 	}
 	for (alph = 'A'; alph <= 'Z'; alph++)
-        {
-                putchar(alph);
-        }
+	{
+		putchar(alph);
+	}
+
 	putchar('\n');
 
 	return (0);
