@@ -1,14 +1,19 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_alphabet - print all alphabet
  *
- * Return: Always 0 (Success)
+ * Return: void (Success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
+	char alph;
+
+	for (alph = 'a'; alph <= 'z'; alph++)
+	{
+		_putchar(48 + alph);
+	}
 	_putchar('\n');
 
 	return (0);
