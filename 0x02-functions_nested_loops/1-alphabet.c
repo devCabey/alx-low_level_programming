@@ -8,9 +8,7 @@
 
 int main(void)
 {
-	char alph = print_alphabet();
-
-	_putchar(alph);
+	print_alphabet();
 	_putchar('\n');
 
 	return (0);
