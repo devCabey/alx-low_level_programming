@@ -18,7 +18,7 @@ void print_diagonal(int n)
 		while (diagonal < n)
 		{
 			check = 0;
-			while (check  <= diagonal)
+			while (check  < diagonal)
 			{
 				_putchar(' ');
 				check++;
