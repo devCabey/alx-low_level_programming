@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 
 /**
  * more_numbers - Print 10 times the numbers from 0 to 14
@@ -12,9 +13,9 @@ void more_numbers(void)
 
 	for (i = 0; i <= 10; i++)
 	{
-		for (j =0; j <= 14; j++)
+		for (j = 0; j <= 14; j++)
 		{
-			f = j / 10;
+			f = floor(j / 10);
 			s = j % 10;
 
 			if (j >= 10)
