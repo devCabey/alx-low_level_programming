@@ -19,12 +19,12 @@ void more_numbers(void)
 			if (j > 9)
 			{
 				s = j % 10;
-				_putchar(1 + '0');
-				_putchar(s + '0');
+				_putchar(1 + 48);
+				_putchar(s + 48);
 			}
 			else
 			{
-				_putchar(j + '0');
+				_putchar(j + 48);
 			}
 			j++;
 		}
