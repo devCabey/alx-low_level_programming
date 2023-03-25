@@ -11,7 +11,7 @@ int main(void)
 	int i;
 
 	i = 1;
-	while (i <= 100)
+	while (i < 100)
 	{
 		if (i % 15 == 0)
 		{
@@ -27,18 +27,11 @@ int main(void)
 		}
 		else
 		{
-			if (i != 100)
-			{
-				printf("%d ", i);
-			}
-			else
-			{
-				printf("%d", i);
-			}
+			printf("%d ", i);
 		}
 		i++;
 	}
-	printf("\n");
+	printf("Buzz\n");
 
 	return (0);
 }
