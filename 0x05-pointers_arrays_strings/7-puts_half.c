@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  * puts_half - prints half of a string
@@ -18,7 +19,7 @@ void puts_half(char *str)
 	{
 		size++;
 	}
-	half = size / 2;
+	half = ceil(size / 2);
 
 	while (str[half])
 	{
