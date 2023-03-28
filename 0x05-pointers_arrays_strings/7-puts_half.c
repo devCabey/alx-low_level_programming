@@ -19,7 +19,14 @@ void puts_half(char *str)
 	{
 		size++;
 	}
-	half = ceil(size / 2);
+	if ( size % 2 == 0)
+	{
+		half = size / 2;
+	}
+	else
+	{
+		half = (size - 1) /2
+	}
 
 	while (str[half])
 	{
