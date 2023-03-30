@@ -30,7 +30,9 @@ char *cap_string(char *c)
 		if (c[i] == '\t' || c[i] == '\n')
 		{
 			if (c[i] == '\t')
-				c[i] = ' ';
+			{
+				c[i] = (char) 32;
+			}
 			if (c[i + 1] > 96 && c[i + 1] < 123)
 			{
 				j = c[i + 1] - 32;
