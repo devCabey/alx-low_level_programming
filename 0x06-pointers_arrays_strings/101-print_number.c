@@ -16,13 +16,15 @@ void recurse(unsigned int i)
 	if (j >= 10)
 	{
 		recurse(j);
-		_putchar(k + '0');
 	}
 	else
 	{
-		_putchar(j + '0');
-		_putchar(k + '0');
+		if (j > 0)
+		{
+			_putchar(j + '0');
+		}
 	}
+	_putchar(k + '0');
 }
 /**
  * print_number - Prints an integer
@@ -45,12 +47,5 @@ void print_number(int n)
 	{
 		i = n;
 	}
-	if (i == 0)
-	{
-		_putchar(0 + '0');
-	}
-	else
-	{
-		recurse(i);
-	}
+	recurse(i);
 }
