@@ -11,10 +11,8 @@
 char *rot13(char *c)
 {
 	int i = 0, j;
-	char s1[] = "abcdefghijklmnopqrstuvwxyz";
-	char s2[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char s3[] = "nopqrstuvwxyzabcdefghijklm";
-	char s4[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
+	char s1[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char s2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	while (c[i])
 	{
@@ -22,12 +20,8 @@ char *rot13(char *c)
 		{
 			if (c[i]  == s1[j])
 			{
-				c[i] = s3[j];
+				c[i] = s2[j];
 				break;
-			}
-			else if (c[i] == s2[j])
-			{
-				c[i] = s4[j];
 			}
 		}
 		i++;
