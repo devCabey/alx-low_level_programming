@@ -21,6 +21,7 @@ void recurse(unsigned int i)
 	else
 	{
 		_putchar(j + '0');
+		_putchar(k + '0');
 	}
 }
 /**
@@ -44,5 +45,12 @@ void print_number(int n)
 	{
 		i = n;
 	}
-	recurse(i);
+	if (i == 0)
+	{
+		_putchar(0 + '0');
+	}
+	else
+	{
+		recurse(i);
+	}
 }
