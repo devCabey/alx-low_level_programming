@@ -16,7 +16,7 @@ char *rot13(char *c)
 
 	while (c[i])
 	{
-		for (j = 0; j < 26; j++)
+		for (j = 0; j < 52; j++)
 		{
 			if (c[i]  == s1[j])
 			{
