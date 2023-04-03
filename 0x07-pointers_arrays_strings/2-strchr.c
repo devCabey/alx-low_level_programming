@@ -15,15 +15,15 @@ char *_strchr(char *s, char c)
 	int i = 0;
 	char *f;
 
+	f = NULL;
 	while (s[i])
 	{
 		if (s[i] == c)
 		{
 			f = &s[i];
-			return (f);
 		}
 
 		i++;
 	}
-	return (0);
+	return (f);
 }
