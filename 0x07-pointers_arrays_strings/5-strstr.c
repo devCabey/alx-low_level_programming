@@ -26,12 +26,13 @@ char *_strstr(char *haystack, char *needle)
 			else
 			{
 				k = 0;
+				break;
 			}
 			j++;
 		}
 		if (k == 1)
 		{
-			c = &haystack[i];
+			c = haystack + i;
 			break;
 		}
 		i++;
