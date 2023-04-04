@@ -16,15 +16,18 @@ char *_strchr(char *s, char c)
 	char *f;
 
 	f = NULL;
-	while (s[i])
+	if (c != ' ' || c != '\0')
 	{
-		if (s[i] == c)
+		while (s[i])
 		{
-			f = s[i];
-			return (f);
-		}
+			if (s[i] == c)
+			{
+				f = &s[i];
+				return (f);
+			}
 
-		i++;
+			i++;
+		}
 	}
 	return (f);
 }
