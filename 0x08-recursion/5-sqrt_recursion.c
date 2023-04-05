@@ -18,7 +18,7 @@ int square_root(int i, int y)
 		}
 		else
 		{
-			square_root(i + 1, y);
+			return (square_root(i + 1, y));
 		}
 	}
 	else
