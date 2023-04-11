@@ -1,0 +1,24 @@
+/**
+ * _memset - Fills memory with a constant byte
+ *
+ * @s: A string
+ *
+ * @b: A char
+ *
+ * @n: An integer
+ *
+ * Return: A string
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
+
+	return (s);
+}
