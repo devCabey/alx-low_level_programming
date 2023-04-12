@@ -37,8 +37,7 @@ char *argstostr(int ac, char **av)
 		}
 		while (i < ac)
 		{
-			j = 0;
-			for (; av[i][j] != '\0';t++)
+			for (j = 0; av[i][j] != '\0'; t++)
 			{
 				ptr[t] = av[i][j];
 				j++;
