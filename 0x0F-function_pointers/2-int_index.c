@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  * int_index - Searhes for an integer
  *
