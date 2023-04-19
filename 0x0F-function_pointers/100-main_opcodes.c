@@ -13,7 +13,7 @@
 
 int main(int argc, char *argv[])
 {
-	unsigned char *f;
+	char *f;
 	int i, j;
 
 	if (argc != 2)
@@ -27,11 +27,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	f = (unsigned char *)main;
+	f = (char *)main;
 	j = 0;
 	while (j < i)
 	{
-		printf("%02x ", f[j]);
+		printf("%02x ", f[j] & 0xff);
 		j++;
 	}
 	printf("\n");
