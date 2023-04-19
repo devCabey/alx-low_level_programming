@@ -31,7 +31,9 @@ int main(int argc, char *argv[])
 	j = 0;
 	while (j < i)
 	{
-		printf("%02x ", f[j] & 0xff);
+		printf("%02x", f[j] & 0xff);
+		if (j != (i - 1))
+			printf(" ");
 		j++;
 	}
 	printf("\n");
