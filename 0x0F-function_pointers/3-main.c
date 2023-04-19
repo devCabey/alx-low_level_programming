@@ -32,11 +32,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	else
-	{
-		ans = k(i, j);
-		printf("%d\n", ans);
-	}
+	ans = k(i, j);
+	printf("%d\n", ans);
 
 	return (0);
 }
