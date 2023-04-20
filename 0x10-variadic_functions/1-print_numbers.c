@@ -5,14 +5,14 @@
 /**
  * print_numbers - Prints numbers followed by a new line
  *
- * @seperator: A string
+ * @separator: A string
  *
  * @n: An unsigned integer
  *
  * Return: void
  */
 
-void print_numbers(const char *seperator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list list;
 	unsigned int i;
@@ -24,7 +24,7 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	while (i < n)
 	{
 		printf("%d%s", va_arg(list, int),
-			       (seperator != NULL && i != (n - 1)) ? seperator : "");
+			       (separator != NULL && i != (n - 1)) ? separator : "");
 		i++;
 	}
 	va_end(list);
