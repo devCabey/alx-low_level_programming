@@ -23,7 +23,8 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	va_start(list, n);
 	while (i < n)
 	{
-		printf("%d%s", va_arg(list, int), (seperator != NULL) ? seperator : "");
+		printf("%d%s", va_arg(list, int),
+			       (seperator != NULL && i != (n - 1)) ? seperator : "");
 		i++;
 	}
 	printf("\n");
