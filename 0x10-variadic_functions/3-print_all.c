@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 /**
@@ -11,6 +12,7 @@
 void print_all(const char * const format, ...)
 {
 	int i;
+	char *s;
 	va_list list;
 
 	va_start(list, format);
@@ -30,7 +32,8 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(list, double));
 				break;
 			case 's':
-				printf("%s", va_arg(list, char *));
+				s = va_arg(list, char *);
+				printf("%s", s == NULL? "(nil)" : s);
 				break;
 			default:
 				break;
